@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.form input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.analytics {
+  margin-top: 20px;
+}
+
+.analytics-item {
+  display: flex;
+  justify-content: space-between;
+  background: #334155;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
