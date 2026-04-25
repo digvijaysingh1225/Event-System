@@ -135,20 +135,50 @@ function App() {
 
         {/* 🔹 Chart */}
         {analytics.length > 0 && (
-          <div style={{ marginTop: "20px" }}>
-            <Bar
-              data={{
-                labels: analytics.map((item) => item._id),
-                datasets: [
-                  {
-                    label: "Event Count",
-                    data: analytics.map((item) => item.count),
-                  },
-                ],
-              }}
-            />
-          </div>
-        )}
+  <div style={{ marginTop: "20px" }}>
+    <Bar
+      data={{
+        labels: analytics.map((item) => item._id),
+        datasets: [
+          {
+            label: "Event Count",
+            data: analytics.map((item) => item.count),
+            backgroundColor: "#3b82f6",   // blue bars
+            borderColor: "#60a5fa",
+            borderWidth: 1,
+          },
+        ],
+      }}
+      options={{
+        plugins: {
+          legend: {
+            labels: {
+              color: "#ffffff", // white text
+            },
+          },
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: "#ffffff", // white labels
+            },
+            grid: {
+              color: "#334155",
+            },
+          },
+          y: {
+            ticks: {
+              color: "#ffffff",
+            },
+            grid: {
+              color: "#334155",
+            },
+          },
+        },
+      }}
+    />
+  </div>
+)}
       </div>
     </div>
   );
